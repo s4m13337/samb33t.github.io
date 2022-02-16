@@ -1,0 +1,84 @@
+*{
+	font-family: "Lucida Console";
+}
+
+.container {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+}
+
+.header {
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	text-align: center;
+	margin: 5px;
+}
+
+.content {
+	display: block;
+	margin: 5px;
+}
+
+.nav {
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	margin: 5px;
+	padding: 5px;
+	text-align: center;
+}
+
+.menu {
+	text-decoration: none;
+	margin: 5px;
+	text-align: center;
+	padding: 2px;
+	color: black;
+}
+
+.menu:hover {
+	text-decoration: none;
+	margin: 5px;
+	text-align: center;
+	border-radius: 3px;
+	border-color: black;
+	background-color: black;
+	color: white;
+}
+
+.menu:focus {
+    outline: 0;
+}
+
+.active {
+	text-decoration: none;
+	margin: 5px;
+	text-align: center;
+	border-radius: 3px;
+	border-color: black;
+	background-color: black;
+	color: white;
+}
+
+.main {
+	display: block;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 2px;
+	margin: 5px;
+	padding: 5px;
+}
+
+.footer {
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 2px;
+	margin: 5px;
+	padding: 5px;
+	text-align: right;
+}

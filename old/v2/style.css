@@ -1,0 +1,139 @@
+
+body{
+	margin: 0;
+	font-family: "Tahoma", Geneva, sans-serif;
+	background-color: cornsilk;
+}
+
+.container {
+	width: 100%;
+	display: block;
+}
+
+.header {
+	width: 100%;
+	top: 0;
+	position: fixed;
+	overflow: hidden;
+	background-color: #7bc7d5;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	
+}
+
+.header a {
+  float: left;
+  color: cornsilk;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 30px;
+}
+
+.navigation{
+	float: right;
+	
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #f49050;
+  color: cornsilk;
+  border-radius: 0;
+}
+
+.header a:hover {
+  float: left;
+  color: cornsilk;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 30px;
+  background-color: #f49050;
+
+}
+
+.header a.logo:hover {
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #f49050;
+  color: cornsilk;
+  border-radius: 0;
+}
+
+.active{
+	float: left;
+  color: cornsilk;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 30px;
+  background-color: #f49050;
+}
+
+.content{
+	margin-top: 54px;
+	width: 100%;
+	display: table;
+	border-collapse: separate;
+	border-spacing: 10px;
+}
+
+.lpanel, .rpanel{
+	display: table-cell;
+	width: 18%;
+	background-color: #fbec91;
+	padding: 10px;
+	position: fixed;
+	height: 80%;
+	overflow-y: auto;
+	top: 64px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.main {
+	display: table-cell;
+	width:60%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fbec92;
+	padding: 5%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footer {
+	bottom: 0;
+	right: 0;
+	position: fixed;
+	padding: 5px;
+	background-color: #7bc7d5;
+	text-align: right;
+	color: cornsilk;
+	font-size: 10pt;
+}
+
+.footer:hover {
+	bottom: 0;
+	right: 0;
+	position: fixed;
+	padding: 5px;
+	background-color: #f49050;
+	text-align: right;
+	color: cornsilk;
+	font-size: 10pt;
+	
+}
+
+.code {
+	font-family: monospace; 
+	background:  cornsilk; 
+	border: 2px solid ;
+	padding: 5px;
+	border-radius: 5px;
+	margin: 20px;
+}
+

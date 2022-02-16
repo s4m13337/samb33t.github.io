@@ -1,0 +1,150 @@
+<h1>X Sin(x) = X-Mas Tree</h1>
+<h3>A christmas tree animation with Mathematica</h3>
+
+<p>We have a line ...</p>
+<div class="code" >
+Plot[x, {x, 0, 30}]
+</div>
+<p align="center"><img src="1.png" align=center></p>
+
+<p>And we have a sine wave ...</p>
+<div class="code">
+Plot[x Sin[x], {x, 0, 30}]
+</div>
+<p align="center"><img src="2.png"></p>
+
+<p>Then we have the product of the line and the sine wave ...</p>
+<div class="code">
+Plot[x Sin[x], {x, 0, 30}]
+</div>
+<p align="center"><img src="3.png"></p>
+
+
+<p>And then we have its negative ...</p>
+<div class="code">
+Plot[-x Sin[x], {x, 0, 30}]
+</div>
+<p align="center"><img src="4.png"></p>
+
+<p>Now lets see them together ...</p>
+<div class="code">
+Show[
+	<blockquote>Plot[x Sin[x], {x, 0, 30}],<br>
+	Plot[-x Sin[x], {x, 0, 30}],<br>
+ 	PlotRange -> Full</blockquote>
+]
+</div>
+<p align="center"><img src="5.png"></p>
+
+<p>Its time to get rid of the axes ...</p>
+<div class="code">
+Show[
+	<blockquote>Plot[x Sin[x], {x, 0, 30}],<br>
+	Plot[-x Sin[x], {x, 0, 30}],<br>
+ 	PlotRange -> Full,<br>
+	Axes -> False</blockquote>
+]
+</div>
+<p align="center"><img src="6.png"></p>
+
+<p>And rotate every thing by 90 degrees ...</p>
+<div class="code">
+Rotate[
+	<blockquote>Show[
+		<blockquote>Plot[x Sin[x], {x, 0, 30}],<br>
+		Plot[-x Sin[x], {x, 0, 30}],<br>
+ 		PlotRange -> Full,<br>
+		Axes -> False</blockquote>
+	], -90 \[Degree]</blockquote>
+]
+</div>
+<p align="center"><img src="7.png"></p>
+
+<p>Adding a few traditional Christmas colors ...</p>
+<div class="code">
+Rotate[
+	<blockquote>Show[
+		<blockquote>Plot[x Sin[x], {x, 0, 30}, PlotStyle -> {Red, Thick}],<br>
+		Plot[-x Sin[x], {x, 0, 30}, PlotStyle -> {Darker@Green, Thick}],<br>
+  		Axes -> False</blockquote>
+	], -90 \[Degree]</blockquote>
+]
+</div>
+<p align="center"><img src="8.png"></p>
+
+<p>And a background ...</p>
+<div class="code">
+Rotate[
+	<blockquote>Show[
+		<blockquote>Plot[x Sin[x], {x, 0, 30}, PlotStyle -> {Red, Thick}],<br>
+		Plot[-x Sin[x], {x, 0, 30}, PlotStyle -> {Darker@Green, Thick}],<br>
+  		Axes -> False,<br>
+		Background -> Black</blockquote>
+	], -90 \[Degree]</blockquote>
+]
+</div>
+<p align="center"><img src="9.png"></p>
+
+<p>A bit of styling ... </p>
+<div class="code">
+Rotate[
+	<blockquote>Show[
+		<blockquote>Plot[x Sin[x], {x, 0, 30}, PlotStyle -> {Red, Thick, Dashed}],<br>
+		Plot[-x Sin[x], {x, 0, 30}, PlotStyle -> {Darker@Green, Thick, Dashed}],<br>
+  		Axes -> False,<br>
+		Background -> Black</blockquote>
+	], -90 \[Degree]</blockquote>
+]
+</div>
+<p align="center"><img src="10.png"></p>
+
+<p>Some snowflakes. We are almost there ...</p>
+<div class="code">
+Overlay[{
+	<blockquote>Rotate[
+   		<blockquote>Dynamic[ListPlot[
+			<blockquote>Table[{RandomReal[]*10, RandomReal[]*10}, {i, 1, 20}],<br>
+     			PlotMarkers -> Style["*", 18],<br>
+			Background -> Black, <br>
+     			Axes -> False, <br>
+			PlotStyle -> White]</blockquote>
+		], -90 \[Degree]],</blockquote>
+  	<blockquote>Rotate[
+		<blockquote>Show[<br>
+			Plot[x Sin[x], {x, 0, 30}, PlotStyle -> {Red, Thick, Dashed}], <br>
+			Plot[-x Sin[x], {x, 0, 30}, PlotStyle -> {Darker@Green, Thick, Dashed}], <br>
+			Axes -> False, <br>
+			Background -> Transparent<br>
+		], -90 \[Degree]</blockquote>]</blockquote>
+}]
+</div>
+<p align="center"><img src="11.png"></p>
+
+<p>And finally, the animation :)</p>
+<div class="code">
+Animate[
+<blockquote>Overlay[{
+	<blockquote>Rotate[
+   		<blockquote>Dynamic[ListPlot[
+			<blockquote>Table[{RandomReal[]*10, RandomReal[]*10}, {i, 1, 20}],<br>
+     			PlotMarkers -> Style["*", 18],<br>
+			PlotLabel -> Style["© Soumya Sambeet Mohapatra", 10, Bold, Italic, Darker@White]<br>
+			Background -> Black, <br>
+     			Axes -> False, <br>
+			PlotStyle -> White]</blockquote>
+		], -90 \[Degree]],</blockquote>
+  	<blockquote>Rotate[
+		<blockquote>Show[<br>
+			Plot[x Sin[x + a], {x, 0, 30}, PlotStyle -> {Red, Thick, Dashed}], <br>
+			Plot[-x Sin[x + a], {x, 0, 30}, PlotStyle -> {Darker@Green, Thick, Dashed}], <br>
+			Axes -> False, <br>
+			Background -> Transparent<br>
+		], -90 \[Degree]</blockquote>]</blockquote>
+}], {a, 1, 0.01}</blockquote>
+]
+</div>
+<p align="center"><img src="12.gif"></p>
+
+<p align="center" style="color: green; font-size: 36px;">Merry Christmas :)</p>
+<p>Github link: <a href="https://github.com/sambeet96/xmas-tree-2019" target="_blank">X-Mas tree 2019</a></p>
+
