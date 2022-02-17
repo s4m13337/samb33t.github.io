@@ -12,6 +12,17 @@ a:hover{
     text-decoration: underline;
 }
 
+p {
+    text-indent: 40px;
+    line-height: 1.25;
+}
+
+hr {
+    border: none;
+    background-color: gray;
+    height: 2px;
+}
+
 #header{
     text-align: center;
 }
