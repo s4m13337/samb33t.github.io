@@ -1,0 +1,112 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+p {
+    text-indent: 40px;
+    line-height: 1.25;
+}
+
+hr {
+    border: none;
+    background-color: gray;
+    height: 2px;
+}
+
+header{
+    text-align: center;
+}
+
+header h1{
+    margin: 0;
+    padding: 10px 0;
+}
+
+.title{
+    text-align: center;
+}
+
+.subtitle{
+    text-align: center;
+    color: grey;
+}
+
+/*--------------------------------------------------------*/
+/*                     Navbar styling                     */
+/*--------------------------------------------------------*/
+
+nav {
+    text-align: center;
+}
+
+nav ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 5px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 2px;
+    padding: 2px;
+}
+
+.section{
+    padding: 25px;
+}
+
+pre{
+    padding: 10px;
+    border-radius: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+/*--------------------------------------------------------*/
+/*                     Footer styling                     */
+/*--------------------------------------------------------*/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+}
+
+/* Desktop design */
+@media only screen and (min-width: 768px) {
+    .section{
+	width: 768px;
+	margin-left: auto;
+	margin-right: auto;
+    }
+
+    header{
+	font-size: 22pt;
+    }
+
+    nav a {
+	font-size: 16pt;
+    }
+
+    nav a:hover{
+	text-decoration: underline;
+    }
+
+    .section{
+	font-size: 14pt;
+    }
+}

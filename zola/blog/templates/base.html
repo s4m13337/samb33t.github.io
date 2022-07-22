@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>s4m13337's Blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <section class="section">
+      <header>
+        <h1>s4m13337's website</h1>
+      </header>
+
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li><a href="/">🏠 Home</a></li>
+          <li><a href="/about">ℹ️ About</a></li>
+          <li><a href="/blog">📝 Blog</a></li>
+          <li><a href="/contact">✉️ Contact</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Content -->
+      <div class="container">
+        {% block content %} 
+        {% endblock %}
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        &copy; s4m13337
+      </footer>
+
+    </section>
+  </body>
+</html>
