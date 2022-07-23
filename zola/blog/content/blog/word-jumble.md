@@ -1,6 +1,8 @@
 +++
 title = "Word jumble"
 date = "2019-11-03"
+[taxonomies]
+tags = ["python", "tech"]
 +++
 
 A couple of nights back, I found myself sleepless due to the soaring heat. No mater how hard I tried, I simply couldn't get myself to rest. After several failed attempts, I decided to do something useful. I opened my dusty closet and started at it aimlessly. Incidentally, my eyes met with my old Python programming book.

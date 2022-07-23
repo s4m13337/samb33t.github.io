@@ -1,6 +1,8 @@
 +++
 title = "Guess the number"
 date = "2020-04-12"
+[taxonomies]
+tags = ["python", "tech"]
 +++
 
 This is a classic terminal based game where the computer thinks of a number and the user has to guess it in as minimum number of tries as possible. Although this game is very simple, it teaches us some absolute fundamentals of programming. Let us see how we can develop this from the pseudocode to the finished product.

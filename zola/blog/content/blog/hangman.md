@@ -1,6 +1,8 @@
 +++
 title = "Hangman"
 date = "2020-05-17"
+[taxonomies]
+tags = ["python", "tech"]
 +++
 
 Every millenial kid knows the traditional Hangman game. The player has to guess the letters of a secret word. With each wrong guess, a portion of the hanging figure is revealed and if you are not able to guess the letters before the complete figure of the hangman is revealed, the game gets over.

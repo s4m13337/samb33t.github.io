@@ -1,6 +1,8 @@
 +++
 title = "X Sin(x) = X-Mas Tree"
 date = "2019-12-25"
+[taxonomies]
+tags = ["wolfram", "tech"]
 +++
 
 In this post, I try to create an animation of a christmas tree using Wolfram Language. This idea is originally inspired from the Wolfram community post [here](https://community.wolfram.com/groups/-/m/t/175891).

@@ -1,17 +1,22 @@
 body{
     padding: 0;
     margin: 0;
-    font-family: Helvetica, sans-serif;
+    font-family: openSans, sans-serif;
+    color: #454545
 }
+
+h1{font-size: 2em;}
+h2{font-size: 1.6em;}
+h3{font-size: 1.3em;}
 
 a{
     text-decoration: none;
-    color: blue;
+    color: #0D6EFD
+    ;
 }
 
 a:hover{
-    text-decoration: underline;
-    color: black;
+    color: #454545;
 }
 
 p {
@@ -25,13 +30,11 @@ hr {
     height: 2px;
 }
 
-header{
+.header{
     text-align: center;
-}
-
-header h1{
     margin: 0;
-    padding: 10px 0;
+    padding: 20px 0;
+    font-size: 36pt;
 }
 
 .title{
@@ -75,14 +78,20 @@ pre{
     text-align: justify;
 }
 
+.taxonomy-title{
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.taxonomy-items{
+    text-transform: capitalize;
+}
+
 /*--------------------------------------------------------*/
 /*                     Footer styling                     */
 /*--------------------------------------------------------*/
 
 footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
     padding: 10px;
 }
 
@@ -96,17 +105,5 @@ footer {
 
     header{
 	font-size: 22pt;
-    }
-
-    nav a {
-	font-size: 16pt;
-    }
-
-    nav a:hover{
-	text-decoration: underline;
-    }
-
-    .section{
-	font-size: 14pt;
     }
 }
